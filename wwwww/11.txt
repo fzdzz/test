@@ -1,0 +1,30 @@
+一、branch
+1、查看远程分支
+
+    $ git branch -a
+2、查看本地分支
+
+    $ git branch
+二、checkout
+1、 通过checkout创建并切换分支
+
+    $ git checkout -b v1 dev
+ 以dev分支为基础创建v1分支并切换到v1分支
+
+2、 通过checkout切换分支
+
+    $ git checkout dev
+切换回dev分支
+
+三、pull
+1、pull相关语法及示例
+
+pull命令的作用是取回远程主机某个分支的更新，再与本地的指定分支合并。
+
+    $ git pull [options] [<repository> [<refspec>…]]
+比如，要取回origin主机的master分支，与本地的study6.0分支合并，需要写成下面这样 -
+
+    $ git pull origin master:study6.0
+————————————————
+版权声明：本文为CSDN博主「菜鸡哥的码场」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_19734597/article/details/84371703
